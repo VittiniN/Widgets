@@ -1,165 +1,293 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
-.row{
-  display: flex;
-  flex-direction: row;
-  
-  align-items: center;
-  margin-left: 20px;
-  border: solid;
-}
-
-.row1{
-  display: flex;
-  flex-direction: row;
-   
-  align-items: center;
-  margin: 20px; 
-  border: solid;
-  
-}
-
-
-.card{
-  margin-right: 20px;
-}
-
-
-
-.barkey{
-  border: solid;
-}
-
-.CTA{
-
-  top: 30px;
-  position: relative;
-  margin-left: 90px;
-  justify-content: center;
-} */
-
-
-
-/* Default styles for all screen sizes */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* ROW STRUCTURE */
 
 .row {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  /* align-items: center; */
-  /* margin-left: 1%; */
-  border: solid;
-  right: 20px;
-  margin-top: 30px; 
-  justify-content: space-between;
-  
+  justify-content: flex-start;
+  margin-top: 30px;
+  justify-content: space-evenly;
 }
 
 .row1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  /* align-items: center; */
-  /* margin-left: 1%; */
-  border: solid;
-  right: 20px;
-  margin-top: 30px; 
-  /* justify-content: center; */
-  justify-content: space-between;
-
+  margin-top: 30px;
+  justify-content: space-evenly;
 }
 
-.card {
-  margin-right: 20px;
+.row3 {
+  flex: 1;
+  margin-top: 30px;
 }
 
-.barkey {
-  border: solid;
-}
+/* ROW STRUCTURE */
 
-.CTA {
-  top: 30px;
+.bar_chart_chart {
   position: relative;
-  margin-left: 90px;
-  justify-content: center; 
+  right: 25px;
 }
 
+.barchartbutton {
+  float: right;
+}
 
-.metric-card__value{
+.recharts-legend-item-text {
+  color: black !important;
+  font-weight: bold !important;
+  font-size: 14px;
+  /* border: solid pink; */
+}
+
+.recharts-default-legend {
+  margin-left: 10px;
+  position: relative;
+  left: 10px;
+  /* border: solid red; */
+  top: 8px;
+}
+
+/* COHORT PROGRAM WIDGET */
+/* YourComponent.css */
+/* ProgramWidget.css */
+.table-container {
+  position: relative;
+  border-radius: 10px  !important;
+}
+
+.content_table {
   border: solid;
-  font-size: 150px; 
+  border-collapse: collapse;
+  margin-left: 300px;
+  width: 38%;
+  padding: 15px;
+  background-color: #dee9ea;
   align-items: center;
+  font-size: 16px;
+  border-radius: 12px;
   
 }
 
-.row3{
-  border: solid; 
+.content_table th {
+  padding-bottom: 5px;
+  text-align: left;
+  background-color: #001C56; 
+  color: white;
+  padding-left: 10px;
 }
 
-.c1{
-  background-image: radial-gradient(circle, #b4f1cd, #eadbf5);
-  width: 28rem; 
+.content_table td {
+  border-bottom: solid 3px; 
+  width: 30%;
+  padding-left: 10px;
+  padding: 7px;
 }
 
-.metric-card__value{
- 
-  width: 150px;
- bottom: 30px;
-  left: 150px;
+.footer {
   position: relative;
+  /* top: 3px; */
+  /* left: 300px; */
+  width: 37.5%;
+  background-color: #001C56;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+ /* margin-bottom: 20px; */
 }
 
-.barchartbutton{
-border: solid; 
-float : right;
-top: 8px;
-position: relative;
-border-radius: 10px;
-
+.content_table tr:hover {
+  background-color: white;
 }
-/* Media query for screens with a maximum width of 768px (typical for tablets and smartphones) */
+
+a.card-link {
+  color: black;
+}
+
+/* COHORT PROGRAM WIDGET */
+
+/* METRIC CARDS */
+
+.metric-card__title {
+  margin-left: 12px;
+  font-size: 16px;
+}
+
+.metric-card__icons {
+  margin-top: 15px !important;
+}
+
+.metric-card__container {
+  display: flex;
+  margin-top: 59px;
+  width: 250px;
+  margin-left: 85px;
+}
+
+.metric-card__value {
+  font-size: 100px;
+  bottom: 20px;
+  position: relative;
+  margin-left: 150px;
+}
+
+.matter_btn {
+  /* margin-right: 20px; */
+  top: 13px;
+  position: relative;
+  float: right;
+  margin-right: 8px;
+}
+
+.helpful_copy_metric {
+  font-size: 12px;
+  text-align: center;
+  color: black;
+  margin-top: auto;
+}
+
+/* METRIC CARDS */
+
+/*Buttons */
+
+.call_to_action_buttons button {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 280px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: #df6d04;
+  color: white;
+  font-weight: bold;
+}
+
+.call_to_action_buttons {
+  display: flex;
+  flex-direction: column;
+  top: 30px;
+  position: relative;
+  margin-left: 70px;
+  justify-content: center;
+}
+/*Buttons */
+
+/* CARD DESIGNS */
+.card-custom {
+  width: 26rem;
+  border-radius: 20px;
+  border: solid #016669 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 310px;
+
+  background: #dee9ea;
+}
+
+.card-custom1 {
+  border: solid #016669 3px;
+  width: 26rem;
+  height: 310px;
+  border-radius: 12px;
+  font-weight: bold;
+  background: #dee9ea;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card_title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-custom .card-body {
+  padding: 15px;
+}
+
+.metric_title {
+  position: relative;
+  top: 13px;
+  font-weight: bold;
+  margin-left: 10px;
+  width: 145px;
+  white-space: nowrap;
+}
+
+/* CARD DESIGNS */
+
+.rechart- .Line-legend-item {
+  border: solid;
+  font-size: 14px;
+  position: relative;
+  top: 16px;
+}
+
+.line_chart_container {
+  position: relative;
+  right: 15px;
+
+  margin-top: 12px;
+}
+
+.card-body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: 35px;
+}
+
+.contact_us_title {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact_us_icon {
+  position: relative;
+  font-size: 15px;
+  top: 2px;
+}
+
 @media screen and (max-width: 900px) {
   .row {
-    flex-direction: column; /* Change to column layout on smaller screens */
+    flex-direction: column;
+    justify-content: space-evenly;
   }
 
   .row1 {
-    flex-direction: column; /* Change to column layout on smaller screens */
-  }
-
-  .CTA {
-    margin-left: 90px; /* Remove left margin on smaller screens */
-  }
-
-  .row3{
     flex-direction: column;
+    justify-content: space-evenly;
   }
 
-  /* Add any additional responsive styles for smaller screens here */
+  .row3 {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+
+
+  .CTA button {
+    width: 100%;
+    height: 100;
+  }
 }

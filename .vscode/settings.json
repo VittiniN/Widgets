@@ -1,0 +1,13 @@
+{
+    "editor.codeActionsOnSave": {
+
+    },
+    "files.autoSave": "afterDelay",
+    "github.copilot.enable": {
+
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": true
+    }
+}

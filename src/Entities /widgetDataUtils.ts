@@ -1,12 +1,11 @@
 import React from 'react';
-import MetricCard from '../Components/Metric';
 
 
 export const pieChartData = [
-  { name: 'Group A', value: 400 },
-  { name: 'Group B', value: 300 },
-  { name: 'Group C', value: 300 },
-  { name: 'Group D', value: 200 },
+  { name: 'Miami', value: 100 },
+  { name: 'Broward County', value: 300 },
+  { name: 'Sunrise', value: 250 },
+  { name: 'Medley', value: 200 },
 ];
 
 const RADIAN = Math.PI / 180;
@@ -62,52 +61,34 @@ export const widgetDatas = [
       ActiveMatters: 70,
       PostedMatters: 20,
     },
-    {
-      name: "April",
-     ActiveMatters: 30,
-      PostedMatters: 85,
-    },
+    // {
+    //   name: "April",
+    //  ActiveMatters: 30,
+    //   PostedMatters: 85,
+    // },
 ]
   
+export const Topcatergories = [
+  { name: "Jan", Jan: 10, Feb: 2, Mar: 43},
+  { name: "Feb", Jan: 30, Feb: 10, Mar: 3 },
+  {name: "Mar", Jan: 10, Feb: 32, Mar: 2 },
+  // {name: "April", Jan: 30, Feb: 23, Mar: 33}
+
+];
+
   
-  export const lineChart = [
-    {
-      "name": "Page A",
-      "uv": 4000,
-      "pv": 2400,
-      "amt": 2400
-    },
-    {
-      "name": "Page B",
-      "uv": 3000,
-      "pv": 1398,
-      "amt": 2210
-    },
-    {
-      "name": "Page C",
-      "uv": 2000,
-      "pv": 9800,
-      "amt": 2290
-    },
-    {
-      "name": "Page D",
-      "uv": 2780,
-      "pv": 3908,
-      "amt": 2000
-    },
+
+export const interestformssubmitted = [
+  { name: "Jan", Jan: 20, Feb: 30, Mar: 60 },
+  { name: "Feb", Jan: 20, Feb: 12, Mar: 10 },
+  { name: "Mar", Jan: 30, Feb: 5, Mar: 3 },
+  // { name: "Apr", Jan: 1, Feb: 12, Mar: 13 },
+];
 
 
 
-  ]
-  
-  // export const MetricCards = [
-  //   {
-  //     "title": String,
-  //     "value": Number
-  //   }
-  // ];
-  
-  
+
+
   
   
   
