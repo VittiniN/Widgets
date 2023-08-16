@@ -118,6 +118,15 @@ a.card-link {
   color: black;
 }
 
+
+.clip-board{
+  border-radius: 10px; 
+  margin-left: 10px;
+}
+.font_awesome_clipboard{
+  padding-right: 8px;
+}
+
 /* COHORT PROGRAM WIDGET */
 
 /* METRIC CARDS */

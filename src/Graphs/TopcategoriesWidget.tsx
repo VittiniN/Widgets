@@ -11,7 +11,7 @@ import {
 import { Card } from "react-bootstrap";
 import { Topcatergories } from "../Entities /widgetDataUtils";
 import { interestformssubmitted } from "../Entities /widgetDataUtils";
-import ActiveVsPostedButton from "../Components/selectmenu /MonthButton";
+import ActiveVsPostedButton from "../Components/selectmenu /MonthsPerMatter";
 
 interface LineChartGraphProps {
   data: { name: string; Jan: number; Feb: number; Mar: number }[];
@@ -27,12 +27,7 @@ const LineChartGraph: React.FC<LineChartGraphProps> = ({ data, title }) => {
           <div className="card_title"> {title}</div>
 
           <div className="line_chart_container">
-            <LineChart
-              width={400}
-              height={250}
-              data={data}
-              // margin={{ top: 20, right: 30, left: 0, bottom: 5 }}
-            >
+            <LineChart width={400} height={250} data={data}>
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis
                 dataKey="name"

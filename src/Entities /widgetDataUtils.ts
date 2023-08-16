@@ -45,7 +45,7 @@ export const renderCustomizedLabel = ({
 };
 
 
-export const widgetDatas = [
+export const activeVsMatters_Widget = [
     {
       name: "Jan",
       ActiveMatters: 20,

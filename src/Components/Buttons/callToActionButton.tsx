@@ -1,8 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import { FaAt, FaBug, FaPlusSquare } from "react-icons/fa";
 
-const ctaButtons = () => {
+const CtaButtons = () => {
   return (
     <div className="call_to_action_buttons">
       <Button variant="primary" size="lg">
@@ -24,7 +23,7 @@ const ctaButtons = () => {
   );
 };
 
-export default ctaButtons; 
+export default CtaButtons; 
 
 
 

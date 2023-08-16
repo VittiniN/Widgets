@@ -9,12 +9,12 @@ import {
   Legend,
   DefaultTooltipContent,
 } from "recharts";
-import { widgetDatas } from "../Entities /widgetDataUtils";
+import { activeVsMatters_Widget } from "../Entities /widgetDataUtils";
 
 const ActiveVsMattersBarChart = () => {
   return (
     <div className="bar_chart_chart">
-      <BarChart width={400} height={260} data={widgetDatas}>
+      <BarChart width={400} height={260} data={activeVsMatters_Widget}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis
           dataKey="name"
@@ -32,7 +32,6 @@ const ActiveVsMattersBarChart = () => {
             { value: "Jan", type: "line", color: "#330E47" },
             { value: "Feb", type: "line", color: "#011e56" },
             { value: "Mar", type: "line", color: "#182000" },
-            // { value: 'April', type: 'line', color: '#182000' },
           ]}
           formatter={(value, entry) => {
             return <span className="Bar-Chart-legend-item">{value}</span>;
