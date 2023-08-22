@@ -63,15 +63,14 @@ code {
 }
 
 /* COHORT PROGRAM WIDGET */
-/* YourComponent.css */
-/* ProgramWidget.css */
+
 .table-container {
   position: relative;
-  border-radius: 10px  !important;
+ 
 }
 
 .content_table {
-  border: solid;
+  border: solid #016669;
   border-collapse: collapse;
   margin-left: 300px;
   width: 38%;
@@ -79,20 +78,20 @@ code {
   background-color: #dee9ea;
   align-items: center;
   font-size: 16px;
-  border-radius: 12px;
-  
+
+
 }
 
 .content_table th {
   padding-bottom: 5px;
   text-align: left;
-  background-color: #001C56; 
+  background-color: #016669;
   color: white;
   padding-left: 10px;
 }
 
 .content_table td {
-  border-bottom: solid 3px; 
+  border-bottom: solid 3px;
   width: 30%;
   padding-left: 10px;
   padding: 7px;
@@ -103,11 +102,11 @@ code {
   /* top: 3px; */
   /* left: 300px; */
   width: 37.5%;
-  background-color: #001C56;
+  background-color: #016669;
   color: white;
   padding: 5px;
   font-size: 16px;
- /* margin-bottom: 20px; */
+  /* margin-bottom: 20px; */
 }
 
 .content_table tr:hover {
@@ -119,13 +118,17 @@ a.card-link {
 }
 
 
-.clip-board{
-  border-radius: 10px; 
+.clip-board {
+  border-radius: 10px;
   margin-left: 10px;
+  padding: 10px;
 }
-.font_awesome_clipboard{
+
+.font_awesome_clipboard {
   padding-right: 8px;
 }
+
+
 
 /* COHORT PROGRAM WIDGET */
 
@@ -192,6 +195,7 @@ a.card-link {
   margin-left: 70px;
   justify-content: center;
 }
+
 /*Buttons */
 
 /* CARD DESIGNS */
