@@ -51,14 +51,12 @@ code {
   color: black !important;
   font-weight: bold !important;
   font-size: 14px;
-  /* border: solid pink; */
 }
 
 .recharts-default-legend {
   margin-left: 10px;
   position: relative;
   left: 10px;
-  /* border: solid red; */
   top: 8px;
 }
 
@@ -66,7 +64,8 @@ code {
 
 .table-container {
   position: relative;
- 
+  width: 100%;
+  right: 250px;
 }
 
 .content_table {
@@ -101,7 +100,7 @@ code {
   position: relative;
   /* top: 3px; */
   /* left: 300px; */
-  width: 37.5%;
+  width: 37.9%;
   background-color: #016669;
   color: white;
   padding: 5px;
@@ -126,11 +125,13 @@ a.card-link {
 
 .font_awesome_clipboard {
   padding-right: 8px;
+  position: relative;
+  left:5px;
 }
-
-
-
 /* COHORT PROGRAM WIDGET */
+
+
+
 
 /* METRIC CARDS */
 
@@ -158,7 +159,6 @@ a.card-link {
 }
 
 .matter_btn {
-  /* margin-right: 20px; */
   top: 13px;
   position: relative;
   float: right;

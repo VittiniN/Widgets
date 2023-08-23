@@ -8,7 +8,7 @@ import Button from "react-bootstrap/Button";
 
 function CopyButtonUrl() {
   const [isCopied, setIsCopied] = useState(false);
-  const [buttonText, setButtonText] = useState('Copy');
+  const [buttonText, setButtonText] = useState('Copy Catalog URL');
 
   const handleCopyClick = () => {
     const urlToCopy = window.location.href;
@@ -17,7 +17,7 @@ function CopyButtonUrl() {
       setButtonText('Copied');
       setTimeout(() => {
         setIsCopied(false);
-        setButtonText('Copy');
+        setButtonText('Copy Catalog URL');
       }, 1000);
     });
   };

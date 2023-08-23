@@ -1,8 +1,7 @@
 import CohortButton from "../Buttons/cohortbutton";
-import CopyButtonUrl from "./CopiedButton";
-import Button from "react-bootstrap/Button";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClipboard } from "@fortawesome/free-solid-svg-icons";
+import CopyButtonUrl from "./ClipboardAction";
+// import Button from "react-bootstrap/Button";
+// import { faClipboard } from "@fortawesome/free-solid-svg-icons";
 interface TableCellProps {
   children: React.ReactNode;
 }
@@ -18,8 +17,6 @@ const TableHeader = () => (
 const TableCell: React.FC<TableCellProps> = ({ children }) => (
   <td>{children}</td>
 );
-
-
 
 interface TableRowsProps {
   name: string;
@@ -78,7 +75,7 @@ const CohortProgramWidget: React.FC = () => (
       <tfoot>
         <tr>
           <td colSpan={2} className="footer">
-            <CohortButton buttonText="Next" />
+            <CohortButton buttonText="Next" Top={28}  />
 
             <CohortButton buttonText="Previous" floatRight />
           </td>

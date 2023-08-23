@@ -24,7 +24,7 @@ const MetricCard: React.FC<MetricCardProps> = ({ value }) => {
 
           <div className="card-body-container">
             <Card.Text className="helpful_copy_metric">
-              This is the average life of a time a case stays on live on PBM{" "}
+              This is the average life of a time a case stays on live on PBM
             </Card.Text>
           </div>
         </Card.Body>
