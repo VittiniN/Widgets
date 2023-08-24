@@ -120,13 +120,15 @@ a.card-link {
 .clip-board {
   border-radius: 10px;
   margin-left: 10px;
-  padding: 10px;
+  padding:10px;
+
 }
 
-.font_awesome_clipboard {
+.clip-board-icon {
   padding-right: 8px;
+  left: 5px;
   position: relative;
-  left:5px;
+  
 }
 /* COHORT PROGRAM WIDGET */
 

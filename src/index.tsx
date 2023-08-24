@@ -2,16 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import ActiveVsMattersCard from "./Graphs/ ActiveVsMattersWidget";
 import LineChartGraph from "./Graphs/TopcategoriesWidget";
-import { Topcatergories } from "./Entities /widgetDataUtils";
-import { interestformssubmitted } from "./Entities /widgetDataUtils";
-import Piechart from "./Graphs/PieChartWidget";
+import {Topcatergories} from "./Entities /widgetDataUtils";
+import {interestformssubmitted} from "./Entities /widgetDataUtils";
 import "./index.css";
 import PieChart from "./Graphs/PieChartWidget";
 import ContactUsWidget from "./Components/CallToActionWidget/ContactUsWidget";
 import Metric from "./Graphs/MetricWidget";
  import Table from "./Components/CohortProgramWidget/table";
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
+
+ const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement
 );
 
 root.render(
