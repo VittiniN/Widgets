@@ -77,8 +77,6 @@ code {
   background-color: #dee9ea;
   align-items: center;
   font-size: 16px;
-
-
 }
 
 .content_table th {
@@ -116,24 +114,18 @@ a.card-link {
   color: black;
 }
 
-
 .clip-board {
   border-radius: 10px;
   margin-left: 10px;
-  padding:10px;
-
+  padding: 10px;
 }
 
 .clip-board-icon {
   padding-right: 8px;
   left: 5px;
   position: relative;
-  
 }
 /* COHORT PROGRAM WIDGET */
-
-
-
 
 /* METRIC CARDS */
 
@@ -283,6 +275,12 @@ a.card-link {
   top: 2px;
 }
 
+.modal {
+  border: solid;
+  background-color: #016669;
+  position: absolute;
+}
+
 @media screen and (max-width: 900px) {
   .row {
     flex-direction: column;
@@ -298,8 +296,6 @@ a.card-link {
     flex-direction: column;
     justify-content: space-evenly;
   }
-
-
 
   .CTA button {
     width: 100%;

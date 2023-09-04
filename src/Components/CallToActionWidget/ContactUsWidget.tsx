@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import Blocklevelbuttons from "../Buttons/callToActionButton";
+// import CallToActionButton from "../Buttons/callToActionButton";
 
 const ContactUsWidget = () => {
   return (
@@ -8,12 +8,11 @@ const ContactUsWidget = () => {
       <Card.Body>
         <div className="contact_us_title">
           <Card.Title>
-            Get In Touch: 
+            Get In Touch:
             <br />
-            
           </Card.Title>
         </div>
-        <Blocklevelbuttons />
+        {/* <CallToActionButton  /> */}
       </Card.Body>
     </Card>
   );

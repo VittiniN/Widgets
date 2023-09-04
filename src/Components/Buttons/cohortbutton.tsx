@@ -16,7 +16,7 @@ const CohortButton: React.FC<cohortButtonProps> = ({
 }) => {
   const buttonStyles: React.CSSProperties = {
     position: "relative",
-      backgroundColor: "#DF6D04",
+    backgroundColor: "#DF6D04",
     color: "white",
     fontWeight: "bold",
     borderRadius: "5px",

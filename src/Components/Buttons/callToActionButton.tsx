@@ -1,31 +1,37 @@
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
+import EmailFormModal from "./callToActionButton";
+ 
 
-const CtaButtons = () => {
+interface CallToActionButtonProps {
+
+show: boolean;
+onHide: () => void;
+
+}
+
+
+
+
+const CallToActionButton: React.FC<CallToActionButtonProps> = () => {
+  const [modalShow, setModalShow] = useState(false);
+
   return (
     <div className="call_to_action_buttons">
-      <Button variant="primary" size="lg">
+      <Button variant="primary" size="lg" onClick={() => setModalShow(true)}>
         Email Us
-        <br />
-     
       </Button>
       <Button variant="secondary" size="lg">
-        Report A Bug 
-        <br />
-        
+        Report A Bug
       </Button>
-      <Button variant="secondary" size="lg">
-        Request A Feature 
-        <br />
-      
+      <Button variant="secondary" size="lg" onClick={() => setModalShow(true)}>
+        Request A Feature
       </Button>
+
+      {/* Render EmailFormModal based on modalShow state */}
+      <EmailFormModal show={modalShow} onHide={() => setModalShow(false)} />
     </div>
   );
 };
 
-export default CtaButtons; 
-
-
-
-
-
-
+export default CallToActionButton;
