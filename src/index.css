@@ -275,11 +275,20 @@ a.card-link {
   top: 2px;
 }
 
-.modal {
-  border: solid;
-  background-color: #016669;
-  position: absolute;
+
+/* .fade{
+  border: solid red; 
+  width: 24rem;
+  position: relative;
+  bottom: 800px; 
+  left: 790px;
+} */
+
+
+.modal{
+  border: solid red;
 }
+
 
 @media screen and (max-width: 900px) {
   .row {
@@ -296,6 +305,11 @@ a.card-link {
     flex-direction: column;
     justify-content: space-evenly;
   }
+
+
+
+
+
 
   .CTA button {
     width: 100%;

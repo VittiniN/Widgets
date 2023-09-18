@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-// import CallToActionButton from "../Buttons/callToActionButton";
+import CallToActionButton from "../Buttons/callToActionButton";
 
 const ContactUsWidget = () => {
   return (
@@ -11,8 +11,8 @@ const ContactUsWidget = () => {
             Get In Touch:
             <br />
           </Card.Title>
+          <CallToActionButton />
         </div>
-        {/* <CallToActionButton  /> */}
       </Card.Body>
     </Card>
   );

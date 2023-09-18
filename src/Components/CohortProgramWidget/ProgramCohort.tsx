@@ -1,7 +1,6 @@
-import CohortButton from "../Buttons/cohortbutton";
+import CohortButton from "./cohortbutton";
 import CopyButtonUrl from "./ClipboardAction";
-// import Button from "react-bootstrap/Button";
-// import { faClipboard } from "@fortawesome/free-solid-svg-icons";
+
 interface TableCellProps {
   children: React.ReactNode;
 }
