@@ -8,10 +8,39 @@ import "./index.css";
 import PieChart from "./Graphs/PieChartWidget";
 import ContactUsWidget from "./Components/CallToActionWidget/ContactUsWidget";
 import Metric from "./Graphs/MetricWidget";
- import Table from "./Components/CohortProgramWidget/table";
+import Table from "./Components/CohortProgramWidget/table";
 
- const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement
-);
+import SSPBWidgetCard from "./Components/SSPBWidgetCard/SSPBWidgetCard";
+
+const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
+
+/* root.render(
+  <>
+    <SSPBWidgetCard>
+      <div slot="header">
+        <h1>Special Header</h1>
+      </div>
+      <div slot="body">Body</div>
+      <h1 slot="footer">Footer</h1>
+    </SSPBWidgetCard> 
+
+    <SSPBWidgetCard>
+      <div slot="header">
+        <h1>Special Header</h1>
+      </div>
+      <div slot="body">Body</div>
+      <h1 slot="footer">Footer</h1>
+    </SSPBWidgetCard> 
+
+    <SSPBWidgetCard>
+      <div slot="header">
+        <h1>Special Header</h1>
+      </div>
+      <div slot="body">Body</div>
+      <h1 slot="footer">Footer</h1>
+    </SSPBWidgetCard> 
+  </>
+); */
 
 root.render(
   <React.StrictMode>
