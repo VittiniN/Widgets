@@ -6,7 +6,6 @@ import {
   YAxis,
   CartesianGrid,
   // Tooltip,
-  Legend,
   DefaultTooltipContent,
 } from "recharts";
 import { activeVsMatters_Widget } from "../Entities /widgetDataUtils";
@@ -24,19 +23,7 @@ const ActiveVsMattersBarChart = () => {
         <YAxis tick={{ fill: "black" }} />
         <DefaultTooltipContent />
 
-        <Legend
-          iconSize={13}
-          iconType="line"
-          wrapperStyle={{ marginTop: "14px" }}
-          payload={[
-            { value: "Jan", type: "line", color: "#330E47" },
-            { value: "Feb", type: "line", color: "#011e56" },
-            { value: "Mar", type: "line", color: "#182000" },
-          ]}
-          formatter={(value, entry) => {
-            return <span className="Bar-Chart-legend-item">{value}</span>;
-          }}
-        />
+      
 
         <Bar dataKey="ActiveMatters" fill="#DF6D04" />
         <Bar dataKey="PostedMatters" fill="#256eff" />

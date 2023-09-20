@@ -8,7 +8,6 @@ const ActiveVsMattersCard = () => {
     <Card className="card-custom">
       <Card.Body>
         <ActiveVsPostedButton />
-        <Card.Title>Active vs Posted Matters</Card.Title>
 
         <ActiveVsMattersBarChart />
       </Card.Body>
