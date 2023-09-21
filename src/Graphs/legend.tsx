@@ -12,9 +12,9 @@ const BarChartLegend = () => {
         { value: "Feb", type: "line", color: "#011e56" },
         { value: "Mar", type: "line", color: "#182000" },
       ]}
-      formatter={(value, entry) => {
-        return <span className="Bar-Chart-legend-item">{value}</span>;
-      }}
+    //   formatter={(value, entry) => {
+    //     return <span className="Bar-Chart-legend-item">{value}</span>;
+    //   }}
     />
   );
 }

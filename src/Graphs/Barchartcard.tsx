@@ -5,8 +5,7 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
-  // Tooltip,
-  DefaultTooltipContent,
+DefaultTooltipContent,
 } from "recharts";
 import { activeVsMatters_Widget } from "../Entities /widgetDataUtils";
 
@@ -22,8 +21,6 @@ const ActiveVsMattersBarChart = () => {
 
         <YAxis tick={{ fill: "black" }} />
         <DefaultTooltipContent />
-
-      
 
         <Bar dataKey="ActiveMatters" fill="#DF6D04" />
         <Bar dataKey="PostedMatters" fill="#256eff" />

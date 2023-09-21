@@ -1,6 +1,6 @@
 import Form from "react-bootstrap/Form";
 
-function Active_Vs_Matters() {
+function ACTIVE_VS_MATTERS() {
   return (
     <div className="barchartbutton">
       <Form.Select aria-label="Default select example">
@@ -13,4 +13,4 @@ function Active_Vs_Matters() {
   );
 }
 
-export default Active_Vs_Matters;
+export default ACTIVE_VS_MATTERS;

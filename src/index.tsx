@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import ActiveVsMattersCard from "./Graphs/ ActiveVsMattersWidget";
+// import ActiveVsMattersCard from "./Graphs/ ActiveVsMattersWidget";
 import BarChartLegend from "./Graphs/legend";
+import ACTIVE_VS_MATTERS from "./Components/selectmenu /MonthsPerMatter";
+import ActiveVsMattersBarChart from "./Graphs/Barchartcard";
+
 // import LineChartGraph from "./Graphs/TopcategoriesWidget";
 // import {Topcatergories} from "./Entities /widgetDataUtils";
 // import {interestformssubmitted} from "./Entities /widgetDataUtils";
@@ -19,26 +22,23 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <>
-    <SSPBWidgetCard>
+    <SSPBWidgetCard renderSelectMenu={true}>
       <div slot="header">
         <h1>Active vs Posted Matters</h1>
       </div>
+      <div slot="selectMenu">
+        <ACTIVE_VS_MATTERS/>
+      </div>
+
       <div slot="body">
-        <ActiveVsMattersCard />
+        <ActiveVsMattersBarChart />
       </div>
 
       <div slot="footer">
-      <BarChartLegend />
-        <h1> hello world </h1>
-      
+        <BarChartLegend />
       </div>
     </SSPBWidgetCard>
 
-   
-   
-   
-   
-   
     <SSPBWidgetCard>
       <div slot="header">
         <h1>Special Header</h1>
