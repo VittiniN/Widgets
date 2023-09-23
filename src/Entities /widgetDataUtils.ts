@@ -68,22 +68,22 @@ export const activeVsMatters_Widget = [
     // },
 ]
   
-// export const Topcatergories = [
-//   { name: "Jan", Jan: 10, Feb: 2, Mar: 43},
-//   { name: "Feb", Jan: 30, Feb: 10, Mar: 3 },
-//   {name: "Mar", Jan: 10, Feb: 32, Mar: 2 },
-//   // {name: "April", Jan: 30, Feb: 23, Mar: 33}
+export const Topcatergories = [
+  // { name: "jan", Jan: 10, Feb: 2, Mar: 43},
+  // { name: "Feb", Jan: 30, Feb: 10, Mar: 3 },
+  // {name: "Mar", Jan: 10, Feb: 32, Mar: 2 },
+  // // {name: "April", Jan: 30, Feb: 23, Mar: 33}
 
-// ];
+];
 
   
 
-// export const interestformssubmitted = [
-//   { name: "Jan", Jan: 20, Feb: 30, Mar: 60 },
-//   { name: "Feb", Jan: 20, Feb: 12, Mar: 10 },
-//   { name: "Mar", Jan: 30, Feb: 5, Mar: 3 },
-//   // { name: "Apr", Jan: 1, Feb: 12, Mar: 13 },
-// ];
+export const interestformssubmitted = [
+  { name: "Jan", Jan: 20, Feb: 30, Mar: 60 },
+  { name: "Feb", Jan: 20, Feb: 12, Mar: 10 },
+  { name: "Mar", Jan: 30, Feb: 5, Mar: 3 },
+  // // { name: "Apr", Jan: 1, Feb: 12, Mar: 13 },
+];
 
 
 

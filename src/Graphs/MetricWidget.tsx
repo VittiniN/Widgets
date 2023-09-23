@@ -6,29 +6,17 @@ import Matter from "../Components/selectmenu /Matters";
 
 type MetricCardProps = {
   value: number;
+  metriccopy: string;
 };
 
-const MetricCard: React.FC<MetricCardProps> = ({ value }) => {
+const MetricCard: React.FC<MetricCardProps> = ({ value, metriccopy }) => {
   return (
     <div className="card-custom1">
-      <Card>
-        <Matter />
+      <div className="metric_title">{metriccopy}</div>
 
-        <Card.Body>
-          <div className="metric_title">
-            <Card.Title>Live Case Duration</Card.Title>
-          </div>
+      <div className="metric-card__value">{value}</div>
 
-          <div className="metric-card__container"></div>
-          <div className="metric-card__value">{value}</div>
-
-          <div className="card-body-container">
-            <Card.Text className="helpful_copy_metric">
-              This is the average life of a time a case stays on live on PBM
-            </Card.Text>
-          </div>
-        </Card.Body>
-      </Card>
+      <div className="card-body-container"></div>
     </div>
   );
 };

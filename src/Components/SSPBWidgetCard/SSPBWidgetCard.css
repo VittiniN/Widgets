@@ -3,17 +3,18 @@
     width: 28rem;
     margin: 20px 20px 20px 20px;
     border-radius: 15px;
+    
 }
 
 .SSPBWidgetCard .SSPBWidgetCard__header {
     /* border: 1px solid blue; */
 }
 
-.SSPBWidgetCard .SSPBWidgetCard__header h1 {
+.SSPBWidgetCard .SSPBWidgetCard__header h1 { 
     font-size: 20px;
     font-weight: bold;
     margin: 0px 0px 0px 0px;
-    padding: 5px 5px 5px 5px;
+    padding: 8px 8px 8px 8px;
 }
 
 .SSPBWidgetCard .SSPBWidgetCard__body {
@@ -29,12 +30,23 @@
 
 .recharts-legend-wrapper{
     position: relative !important;
-    /* border: solid;  */
+    height: 50px;
+    padding-bottom: 10px;
 }
 
 
 .SSPBWidgetCard__selectMenu{
-   padding-right: 8px;
-    height: 30px;
+   /* padding-right: 8px 0px 10px 0px; */
    float: right; 
+   /* border: solid; */
+   /* padding-bottom: 10px; */
+   position: relative;
+   bottom: 10px;
+   padding-right: 10px;
+}
+
+
+.SSPBWidgetCard .bar_chart_chart {
+    /* border: solid;
+    width: 23rem; */
 }
