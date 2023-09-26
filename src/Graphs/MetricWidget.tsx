@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 // import { FaCaretUp } from "react-icons/fa";
 // import { FaCaretDown } from "react-icons/fa";
-import Matter from "../Components/selectmenu /Matters";
+import Matter from "../Components/selectmenu/Matters";
 
 type MetricCardProps = {
   value: number;

@@ -1,6 +1,5 @@
 import React from "react";
-import { Legend } from "recharts";
-import { Line } from "recharts";
+import { Legend, Line } from "recharts";
 interface BarChartLegendProps {
    COLORS: string[]; 
    type: string;
@@ -11,7 +10,8 @@ interface BarChartLegendProps {
 const BarChartLegend: React.FC<BarChartLegendProps> = ({COLORS,
     type,
     datakey,
-    stroke,}) => {
+    stroke,
+  }) => {
   return (
     <Legend
     //   iconSize={13}
@@ -23,6 +23,7 @@ const BarChartLegend: React.FC<BarChartLegendProps> = ({COLORS,
         { value: "Mar", type: "line", color: "#182000" },
         
       ]}
+      
     //   formatter={(value, entry) => {
     //     return <span className="Bar-Chart-legend-item">{value}</span>;
     //   }}

@@ -69,11 +69,9 @@ export const activeVsMatters_Widget = [
 ]
   
 export const Topcatergories = [
-  // { name: "jan", Jan: 10, Feb: 2, Mar: 43},
-  // { name: "Feb", Jan: 30, Feb: 10, Mar: 3 },
-  // {name: "Mar", Jan: 10, Feb: 32, Mar: 2 },
-  // // {name: "April", Jan: 30, Feb: 23, Mar: 33}
-
+  { name: "jan", Jan: 10, Feb: 2, Mar: 43 },
+  { name: "Feb", Jan: 30, Feb: 10, Mar: 3 },
+  { name: "Mar", Jan: 10, Feb: 32, Mar: 2 },
 ];
 
   
