@@ -10,6 +10,13 @@ DefaultTooltipContent,
 } from "recharts";
 import { activeVsMatters_Widget } from "../Entities/widgetDataUtils";
 
+
+interface ActiveVsMattersBarChartProps {
+
+}
+
+
+
 const ActiveVsMattersBarChart = () => {
   return (
     <div className="bar_chart_chart">

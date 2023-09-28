@@ -8,9 +8,8 @@ import ActiveVsMattersBarChart from "./Graphs/Barchartcard";
 import Matters from "./Components/selectmenu/Matters";
 
 import {Topcatergories}from "./Entities/widgetDataUtils";
-import { interestformssubmitted } from "./Entities/widgetDataUtils";
+import {interestformssubmitted} from "./Entities/widgetDataUtils";
  import Topcatergorieswidget from "./Graphs/TopcategoriesWidget";
-// import "./index.css";
 // import PieChart from "./Graphs/PieChartWidget";
 // import ContactUsWidget from "./Components/CallToActionWidget/ContactUsWidget";
 import Metric from "./Graphs/MetricWidget";
@@ -19,14 +18,7 @@ import { CartesianGrid, LineChart, XAxis, YAxis } from "recharts";
 // import LineChart from "./Graphs/TopcategoriesWidget";
 
 // import Table from "./Components/CohortProgramWidget/table";
-import {
- 
-  Line,
- 
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from "recharts";
+
 import SSPBWidgetCard from "./Components/SSPBWidgetCard/SSPBWidgetCard";
 import Linechart from "./Graphs/TopcategoriesWidget";
 
@@ -102,7 +94,7 @@ root.render(
         { dataKey: 'Feb' },
         { dataKey: 'Mar' }
       ]}
-      colors={['pink', 'purple', 'yellow']}
+      colors={['pink', '#3E8914', 'yellow']}
     />
 
       
@@ -159,5 +151,43 @@ root.render(
         />
       </div>
     </SSPBWidgetCard>
+
+
+
+
+    <SSPBWidgetCard renderSelectMenu={true}>
+<div slot="header"> 
+<h1> hello </h1>
+</div>
+<div slot="selectMenu">
+</div>
+<div slot="body">
+  <h1> hello world </h1>
+</div>
+<div slot="footer">
+ok 
+  </div> 
+
+
+
+   </SSPBWidgetCard>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </>
 );

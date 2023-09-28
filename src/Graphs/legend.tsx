@@ -20,7 +20,7 @@ const BarChartLegend: React.FC<BarChartLegendProps> = ({COLORS,
       payload={[
         { value: "Jan", type: "line", color: "#DF6D04" },
         { value: "Feb ", type: "line", color: "#256EFF" },
-        { value: "Mar", type: "line", color: "#182000" },
+        { value: "Mar", type: "line", color: "#330E47" },
         
       ]}
       

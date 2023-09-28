@@ -31,7 +31,10 @@
 //   const x = cx + radius * Math.cos(-midAngle * RADIAN);
 //   const y = cy + radius * Math.sin(-midAngle * RADIAN);
 
-//   return React.createElement(
+// export const data = () => {
+
+
+//   return (
 //     'text',
 //     {
 //       x,
@@ -43,6 +46,15 @@
 //     `${(percent * 100).toFixed(0)}%`
 //   );
 // };
+// }
+
+
+
+export const PieChartData = [
+  { name: 'Category 1', value: 30 },
+  { name: 'Category 2', value: 40 },
+];
+
 
 
 export const activeVsMatters_Widget = [
