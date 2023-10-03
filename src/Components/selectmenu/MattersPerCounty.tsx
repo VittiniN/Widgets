@@ -1,6 +1,6 @@
 import Form from "react-bootstrap/Form";
 
-function Matter() {
+function mattersPerCounty () {
   return (
     <div className="barchartbutton">
       <Form.Select aria-label="Default select example">
@@ -13,4 +13,4 @@ function Matter() {
   );
 }
 
-export default Matter;
+export default mattersPerCounty;

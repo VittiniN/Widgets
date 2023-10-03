@@ -7,7 +7,7 @@ interface LineChartProps {
   lines?: { dataKey: string }[];
   colors?: string[];
   fontWeight?: number | string;
-  stroke?: number | string;
+  stroke?: string[];
   fill?: string;
 }
 
@@ -17,12 +17,12 @@ const DEFAULT_FILL = "black";
 
 const Linechart: React.FC<LineChartProps> = ({
   fontWeight = Default_Font_Weight,
-  stroke = Default_Stroke,
+  stroke = [Default_Stroke],
   fill = DEFAULT_FILL,
-  data = [],
   lines = [],
   colors = [],
 }) => {
+ 
   return (
     <LineChart width={400} height={300} data={Topcatergories}>
       <CartesianGrid strokeDasharray="3 3" />

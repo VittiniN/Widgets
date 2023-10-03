@@ -6,9 +6,6 @@
     
 }
 
-.SSPBWidgetCard .SSPBWidgetCard__header {
-    /* border: 1px solid blue; */
-}
 
 .SSPBWidgetCard .SSPBWidgetCard__header h1 { 
     font-size: 20px;
@@ -17,15 +14,7 @@
     padding: 8px 8px 8px 8px;
 }
 
-.SSPBWidgetCard .SSPBWidgetCard__body {
-    /* border: 1px solid green; */
-}
 
-.SSPBWidgetCard .SSPBWidgetCard__footer {
-    /* border: 1px solid red; */
-  
-
-}
 
 
 .recharts-legend-wrapper{
@@ -45,8 +34,3 @@
    padding-right: 10px;
 }
 
-
-.SSPBWidgetCard .bar_chart_chart {
-    /* border: solid;
-    width: 23rem; */
-}

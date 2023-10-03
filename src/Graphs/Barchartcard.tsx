@@ -5,17 +5,9 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
-  Line,
-DefaultTooltipContent,
+  DefaultTooltipContent,
 } from "recharts";
 import { activeVsMatters_Widget } from "../Entities/widgetDataUtils";
-
-
-interface ActiveVsMattersBarChartProps {
-
-}
-
-
 
 const ActiveVsMattersBarChart = () => {
   return (

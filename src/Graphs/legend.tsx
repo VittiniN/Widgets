@@ -1,40 +1,34 @@
-import React from "react";
-import { Legend, Line } from "recharts";
+
+import React from 'react';
+import { Legend } from 'recharts';
+
 interface BarChartLegendProps {
-   COLORS: string[]; 
-   type: string;
-   datakey: string;
-   stroke: string;
-  }
-  
-const BarChartLegend: React.FC<BarChartLegendProps> = ({COLORS,
-    type,
-    datakey,
-    stroke,
-  }) => {
+  values: string[];
+  colors: string[];
+  type?: string;
+}
+
+
+interface RechartsPayload {
+  value: string;
+  type: 'line' | 'square' | 'circle'; 
+  color: string;
+}
+
+const BarChartLegend: React.FC<BarChartLegendProps> = ({ values, colors, type }) => {
+  const payLoad: RechartsPayload[] = values.map((value, index) => ({
+    value,
+    type: 'square' || 'circle', 
+    color: colors[index] || "#000000",
+  }));
+
   return (
-    <Legend
-    //   iconSize={13}
-    //   iconType="line"
+
+        <Legend
       wrapperStyle={{ marginTop: "14px" }}
-      payload={[
-        { value: "Jan", type: "line", color: "#DF6D04" },
-        { value: "Feb ", type: "line", color: "#256EFF" },
-        { value: "Mar", type: "line", color: "#330E47" },
-        
-      ]}
-      
-    //   formatter={(value, entry) => {
-    //     return <span className="Bar-Chart-legend-item">{value}</span>;
-    //   }}
+      payload={payLoad}
     />
- 
   );
 }
 
 export default BarChartLegend;
-
-
-
-
-
