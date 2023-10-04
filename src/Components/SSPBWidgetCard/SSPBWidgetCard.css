@@ -1,41 +1,41 @@
 .SSPBWidgetCard {
-    border: 1px solid black;
-    width: 28rem;
-    margin: 20px 20px 20px 20px;
-    border-radius: 15px;
-    
+  border: 1px solid black;
+  width: 28rem !important;
+  margin: 20px 20px 20px 20px;
+  border-radius: 15px;
+  background-color: #dee9ea;
 }
 
-
-.SSPBWidgetCard .SSPBWidgetCard__header h1 { 
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0px 0px 0px 0px;
-    padding: 8px 8px 8px 8px;
+.SSPBWidgetCard .SSPBWidgetCard__header h1 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px 0px 0px 0px;
+  padding: 8px 8px 8px 8px;
 }
 
-
-
-
-.recharts-legend-wrapper{
-    position: relative !important;
-    height: 50px;
-    padding-bottom: 10px;
+.recharts-legend-wrapper {
+  position: relative !important;
+  height: 50px;
+  padding-bottom: 10px;
 }
 
+.SSPBWidgetCard__selectMenu {
+  float: right;
 
-.SSPBWidgetCard__selectMenu{
-   /* padding-right: 8px 0px 10px 0px; */
-   float: right; 
-   /* border: solid; */
-   /* padding-bottom: 10px; */
-   position: relative;
-   bottom: 10px;
-   padding-right: 10px;
+  position: relative;
+  bottom: 10px;
+  padding-right: 10px;
 }
 
-.SSPBWidgetCTA{
-    width: 100%; 
-    border: solid;
-    
+.SSPBWidgetCard .SSPBWidgetCTA {
+  height: 22rem;
+}
+.SSPBWidgetCTA_buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 23%;
+  max-width: 280px;
+  left: 85px;
 }
