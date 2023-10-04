@@ -260,7 +260,28 @@ root.render(
   <div slot="selectMenu">
     </div>
     <div slot="body">
-      <SSPBWidgetCTA />
+    <SSPBWidgetCTA
+  buttonData={[
+    {
+      variant: "primary",
+      label: "Email Us",
+      
+    },
+    {
+      variant: "secondary",
+      label: "Report a Bug"
+    },
+    
+    {
+      variant: "secondary",
+      label: "Request a Feature"
+    }
+
+    
+  ]}
+
+/>
+     
       </div>
       <div slot="footer">
         </div>

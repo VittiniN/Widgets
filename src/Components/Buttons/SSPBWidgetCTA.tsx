@@ -1,26 +1,41 @@
-import React from "react";
-import { Button } from "react-bootstrap";
+import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 
 
-const SSPBWidgetCTA = () => {
-    return (
-        <>
-<Button variant="primary" size="lg">
-    Email us
-</Button> 
-<Button variant="secondary" size="lg">
-    Report a bug
-</Button>
-<Button variant="secondary" size="lg">
-    Request a feature
-</Button>
-</>
-  );
 
+interface SSPBWIdgetCTAProps {
+    buttonData: { variant: string; label: string }[];    
+    variant?: string;
+    label?: string;
     }
-
-
-
+    
+    
+const SSPBWidgetCTA: React.FC<SSPBWIdgetCTAProps> = ({ buttonData, variant,label}) => {
+  return (
+    <div className="SSPBWidgetCTA">
+      {buttonData.map((button, index) => (
+        <Button key={index} variant={button.variant} size="lg">
+          {button.label}
+        </Button>
+      ))}
+    </div>
+  );
+};
 
 export default SSPBWidgetCTA;
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
