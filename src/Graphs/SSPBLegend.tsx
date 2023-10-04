@@ -15,7 +15,7 @@ interface RechartsPayload {
   color: string;
 }
 
-const BarChartLegend: React.FC<BarChartLegendProps> = ({ values, colors, type }) => {
+const SSPBLegend: React.FC<BarChartLegendProps> = ({ values, colors, type }) => {
   const payLoad: RechartsPayload[] = values.map((value, index) => ({
     value,
     type: 'square' || 'circle', 
@@ -31,4 +31,4 @@ const BarChartLegend: React.FC<BarChartLegendProps> = ({ values, colors, type })
   );
 }
 
-export default BarChartLegend;
+export default SSPBLegend;

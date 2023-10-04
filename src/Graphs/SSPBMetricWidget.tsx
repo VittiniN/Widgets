@@ -9,7 +9,7 @@ type MetricCardProps = {
   metriccopy: string;
 };
 
-const MetricCard: React.FC<MetricCardProps> = ({ value, metriccopy }) => {
+const SSPBMetricWidget: React.FC<MetricCardProps> = ({ value, metriccopy }) => {
   return (
     <div className="card-custom1">
       <div className="metric_title">{metriccopy}</div>
@@ -21,4 +21,4 @@ const MetricCard: React.FC<MetricCardProps> = ({ value, metriccopy }) => {
   );
 };
 
-export default MetricCard;
+export default SSPBMetricWidget;

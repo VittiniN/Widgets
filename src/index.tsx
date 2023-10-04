@@ -1,28 +1,29 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 // import ActiveVsMattersCard from "./Graphs/ ActiveVsMattersWidget";
-import BarChartLegend from "./Graphs/legend";
+import BarChartLegend from "./Graphs/SSPBLegend";
 import ACTIVE_VS_MATTERS from "./Components/selectmenu/MonthsPerMatter";
 import MattersPerCounty from "./Components/selectmenu/MattersPerCounty";
-import ActiveVsMattersBarChart from "./Graphs/Barchartcard";
+import ActiveVsMattersBarChart from "./Graphs/SSPBBarChartCard";
 import Matters from "./Components/selectmenu/Matters";
 
 import { Topcatergories } from "./Entities/widgetDataUtils";
 import { interestformssubmitted } from "./Entities/widgetDataUtils";
-import Topcatergorieswidget from "./Graphs/TopcategoriesWidget";
+// import Topcatergorieswidget from "./Graphs/TopcategoriesWidget";
 // import PieChart from "./Graphs/PieChartWidget";
 // import ContactUsWidget from "./Components/CallToActionWidget/ContactUsWidget";
-import Metric from "./Graphs/MetricWidget";
+import Metric from "./Graphs/SSPBMetricWidget";
 // import { Line, LineChart } from "recharts";
-import { CartesianGrid, LineChart, XAxis, YAxis } from "recharts";
-// import LineChart from "./Graphs/TopcategoriesWidget";
+// import { CartesianGrid, LineChart, XAxis, YAxis } from "recharts";
+import SSPBWidgetlineChart from "./Graphs/SSPBWidgetlineChart";
 
 // import Table from "./Components/CohortProgramWidget/table";
 
 import SSPBWidgetCard from "./Components/SSPBWidgetCard/SSPBWidgetCard";
-import Linechart from "./Graphs/TopcategoriesWidget";
+// import Linechart from "./Graphs/TopcategoriesWidget";
 import SSPBWidgetPieChart, { PieChartData } from "./Graphs/SSPWidgetPieChart";
 import SSPBWidgetCTA from "./Components/Buttons/SSPBWidgetCTA";
+import { LineChart } from "recharts";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -72,6 +73,21 @@ root.render(
       <div slot="footer">Footer</div>
     </SSPBWidgetCard>
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <SSPBWidgetCard renderSelectMenu={true}>
       <div slot="header">
         <h1>Top Categories</h1>
@@ -82,31 +98,72 @@ root.render(
       </div>
 
       <div slot="body">
-        <Linechart
-          data={Topcatergories}
-          lines={[
-            { dataKey: "Jan" },
-            { dataKey: "Feb" },
-            { dataKey: "Mar" },
-
-            { dataKey: "April" },
-          ]}
-          colors={["red", "red", "red", "pink"]}
-          stroke={["#8884d8", "#82ca9d", "#ffc658", "#ff7300"]}
-
-        />
-      </div>
+      <SSPBWidgetlineChart
+  dataKeys={["Jan", "Feb", "Mar", "Apr"]} 
+  data={[
+    { name: "Jan", Jan: 10, Feb: 2, Mar: 43, Apr: 2 },
+    { name: "Feb", Jan: 30, Feb: 10, Mar: 3, Apr: 5 },
+    { name: "Mar", Jan: 20, Feb: 5, Mar: 3, Apr: 15 },
+    { name: "Apr", Jan: 27, Feb: 8, Mar: 3, Apr: 25 },
+    { name: "May", Jan: 27, Feb: 8, Mar: 3, Apr: 26 },
+  ]}
+  colors={["#256EFF", "#DF6D04", "#3E8914", "#0669"]}
+/>
+</div>
 
       <div slot="footer">
         <BarChartLegend
-          colors={["#DF6D04", "#256EFF", "#182000"]}
-          values={["Misc", "Individual Rights", "Family Law", "Consumer Case"]}
-          type="line"
+          colors={["#256EFF", "#DF6D04", "##3E8914","##0669"]}
+          values={["Indiv. Rights","Misc", "Fam.Law", "Cons. Case"]}
+        
         />
       </div>
     </SSPBWidgetCard>
 
-    <SSPBWidgetCard renderSelectMenu={true}>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <SSPBWidgetCard renderSelectMenu={true}>
       <div slot="header">
         <h1>Interests Forms Submitted</h1>
       </div>
@@ -114,35 +171,57 @@ root.render(
         <ACTIVE_VS_MATTERS />
       </div>
       <div slot="body">
-      <Linechart
-  data={interestformssubmitted}
-  lines={[
-    { dataKey: "Jan" },
-    { dataKey: "Feb" },
-    { dataKey: "Mar" },
-    { dataKey: "April" },
-  ]}
-  colors={["pink", "orange", "yellow", "green"]}
-/>
+      <SSPBWidgetlineChart
+          dataKeys={["Jan", "Feb", "Mar",]} 
 
-      </div>
-      
+          data={[
+            { name: "Jan", Jan: 10, Feb: 2, Mar: 43, Apr: 2 },
+            { name: "Feb", Jan: 30, Feb: 10, Mar: 3, Apr: 5 },
+            { name: "Mar", Jan: 20, Feb: 5, Mar: 3, Apr: 15 },
+          
+          ]}
+          colors={["#DF6D04", "#330e47", "#256eFF","#016669"]}
+        />
+  
+        
+        
+        
+ </div>
+    
       
       
       <div slot="footer">
         <BarChartLegend
           values={[
-            "Miami-dade",
-            "Another County",
-            "Yet Another County",
-            "One More County",
+            "Jan",
+            "Feb",
+            "Mar",
           ]}
           colors={["#002347", "#ff8e00", "#003366", "#00C49F"]}
-          type="line"
+          
         />
       </div>
     </SSPBWidgetCard>
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <SSPBWidgetCard renderSelectMenu={true}>
       <div slot="header">
         <h1>Active Matters Per County</h1>
@@ -161,13 +240,13 @@ root.render(
         <BarChartLegend
           values={
             [
-              "Miami-dade",
-              "Another County",
-              "Yet Another County",
-              "One More County",
+              "FL",
+              "MA",
+              "CA",
+              "RI",
             ]
           }
-          colors={[]}
+          colors={["#0088FE", "#00C49F", "#FFBB28", "#FF8042"]}
           type="line"
         />
       </div>
