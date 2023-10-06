@@ -6,13 +6,17 @@ interface SSPBWidgetCohortProps {
     cohortData: { programName: string; button: string }[];
   }
   
+
+// this will code will allow me use an api to populate the actual program name 
+
+
   const SSPBWidgetCohort: React.FC<SSPBWidgetCohortProps> = ({ cohortData }) => {
     return (
       <div>
         {cohortData.map((data, index) => (
           <div className="SSPBWidgetCohorttable" key={index}>
-            <h2>{data.programName}</h2>
-            <button>{data.button}</button>
+            <h3>{data.programName}</h3>
+            <Button>{data.button}</Button>
           </div>
         ))}
       </div>

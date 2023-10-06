@@ -7,40 +7,30 @@ import {
   CartesianGrid,
   DefaultTooltipContent,
 } from "recharts";
-import { activeVsMattersData } from "../Entities/widgetDataUtils";
 
-
-interface SSPBBarChartCardProps {
-
-  fontWeight?: number;
+interface SSPBBarChartWidgetProps {
+  fontWeight?: string;
   fontSize?: number;
   fill?: string;
-
-
+  data?: any[];
 }
 
-
-const DEFAULT_FONT_WEIGHT="bold"
-const DEFAULT_FONT_SIZE="14px"
-const DEFAULT_FILL="black"
-const SSPBBarChartCard: React.FC<SSPBBarChartCardProps> = ({
+const DEFAULT_FONT_WEIGHT = "bold";
+const DEFAULT_FONT_SIZE = "14px";
+const DEFAULT_FILL = "black";
+const SSPBBarChartWidget: React.FC<SSPBBarChartWidgetProps> = ({
   fontWeight = DEFAULT_FONT_WEIGHT,
   fontSize = DEFAULT_FONT_SIZE,
   fill = DEFAULT_FILL,
+  data
 }) => {
-
-
-
   return (
     <div className="bar_chart_chart">
-      <BarChart width={400} height={260} data={activeVsMattersData}>
+      <BarChart width={400} height={260} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis
-          dataKey="name"
-          tick={{fontWeight,fontSize,fill  }}
-          />
+        <XAxis dataKey="name" tick={{ fontWeight, fontSize, fill }} />
 
-        <YAxis tick={{ }} />
+        <YAxis tick={{ fontWeight, fill, fontSize }} />
         <DefaultTooltipContent />
 
         <Bar dataKey="ActiveMatters" fill="#DF6D04" />
@@ -50,4 +40,4 @@ const SSPBBarChartCard: React.FC<SSPBBarChartCardProps> = ({
   );
 };
 
-export default SSPBBarChartCard;
+export default SSPBBarChartWidget;
