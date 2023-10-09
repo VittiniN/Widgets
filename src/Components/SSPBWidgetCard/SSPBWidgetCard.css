@@ -3,7 +3,7 @@
   width: 28rem !important;
   margin: 20px 20px 20px 20px;
   border-radius: 15px;
-  background-color: #Dbe9ea;
+  background-color: #dbe9ea;
 }
 
 .SSPBWidgetCard .SSPBWidgetCard__header h1 {
@@ -28,8 +28,9 @@
 }
 
 .SSPBWidgetCard .SSPBWidgetCTA {
- height: 20rem;
+  height: 20rem;
 }
+
 .SSPBWidgetCard .SSPBWidgetCTA_buttons {
   display: flex;
   flex-direction: column;
@@ -40,54 +41,48 @@
   left: 85px;
 }
 
-
-.SSPBWidgetCard .SSPBWidgetCohorttable{
-    display: flex;
-    flex-direction: row;    
-    justify-content: space-between;
-    margin: 5px;
-    padding: 5px;
-    max-height: 20rem;
-    overflow-y: auto;
+.SSPBWidgetCard .SSPBWidgetCohorttable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px;
+  max-height: 20rem;
+  overflow-y: auto;
 }
-
 
 .SSPBWidgetCard .SSPBWidgetCohorttable button {
-    border-radius: 10px;
-    height: 2rem;
-    margin-top: 10px;
+  border-radius: 10px;
+  height: 2rem;
+  margin-top: 10px;
 }
 
-
-.SSPBWidgetCohorttable h3{
-   font-weight: 100;
-   font-size: 15px;
+.SSPBWidgetCohorttable h3 {
+  font-weight: 100;
+  font-size: 15px;
 }
-
 
 .SSPBWidgetCard .SSPBMetricWidget {
-    height: 20rem;
+  height: 20rem;
 }
 
-.SSPBWidgetCard .SSPBMetricCopy{
-    font-size: 15px;
-    position: relative;
-    top: 15rem;
-    justify-content: center;
-    white-space: nowrap;
-    left: 3rem;
+.SSPBWidgetCard .SSPBMetricCopy {
+  font-size: 15px;
+  position: relative;
+  top: 15rem;
+  justify-content: center;
+  white-space: nowrap;
+  left: 3rem;
 }
 
-
-
-.SSPBWidgetCard .SSPBMetricValue{
-    font-size: 140px;
-    width: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    left: 40%;
-    top: 10% 
+.SSPBWidgetCard .SSPBMetricValue {
+  font-size: 140px;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  left: 40%;
+  top: 10%;
 }

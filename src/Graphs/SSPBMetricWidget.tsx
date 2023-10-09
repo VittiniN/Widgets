@@ -4,7 +4,6 @@ type MetricCardProps = {
   value?: number;
   metriccopy?: string;
 };
-
 const SSPBMetricWidget: React.FC<MetricCardProps> = ({ value, metriccopy }) => {
   return (
     <div className="SSPBMetricWidget">

@@ -22,7 +22,7 @@ const SSPBBarChartWidget: React.FC<SSPBBarChartWidgetProps> = ({
   fontWeight = DEFAULT_FONT_WEIGHT,
   fontSize = DEFAULT_FONT_SIZE,
   fill = DEFAULT_FILL,
-  data
+  data,
 }) => {
   return (
     <div className="bar_chart_chart">
@@ -32,7 +32,6 @@ const SSPBBarChartWidget: React.FC<SSPBBarChartWidgetProps> = ({
 
         <YAxis tick={{ fontWeight, fill, fontSize }} />
         <DefaultTooltipContent />
-
         <Bar dataKey="ActiveMatters" fill="#DF6D04" />
         <Bar dataKey="PostedMatters" fill="#256eff" />
       </BarChart>

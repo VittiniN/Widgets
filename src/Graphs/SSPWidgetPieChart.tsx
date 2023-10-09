@@ -5,12 +5,12 @@ interface SSPBWidgetPieChartProps {
   COLORS?: string[];
   dataKey?: { dataKey: string }[];
   type?: string;
-  data: any[];
+  data: any[]; // these are my properties
 }
 
-
-const RADIAN = Math.PI / 180;
+const RADIAN = Math.PI / 180; //
 const renderCustomizedLabel = ({
+  // this render function allows me to customize the labels displayed in each segment
   cx,
   cy,
   midAngle,
@@ -43,7 +43,7 @@ const DEFAULT_COLORS = ["#256Eff", "#3e8914", "#016669", "#DF6D04"];
 
 const SSPBWidgetPieChart: React.FC<SSPBWidgetPieChartProps> = ({
   COLORS = DEFAULT_COLORS,
-  data
+  data,
 }) => {
   return (
     <PieChart width={400} height={250}>
